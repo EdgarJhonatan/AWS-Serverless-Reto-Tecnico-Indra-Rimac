@@ -1,0 +1,453 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Documentación Essential - Reto técnico Serverless Bakcend NodeJs",
+        "version": "1.0.0",
+        "title": "Documentación Essential - INDRA-RIMAC",
+        "contact": {
+            "email": "jdmkrd@gmail.com"
+        }
+    },
+    "host": "bk0wqomu2f.execute-api.us-east-2.amazonaws.com",
+    "basePath": "/dev",
+    "tags": [
+        {
+            "name": "starship",
+            "description": "Tags para consumir servicios API StarWar",
+            "externalDocs": {
+                "description": "Puede ser golpeado directament desde insomnia y/o postmam"
+            }
+        },
+        {
+            "name": "vehicle",
+            "description": "Integrado con Express JS",
+            "externalDocs": {
+                "description": "Puede ser golpeado directament desde insomnia y/o postmam"
+            }
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/starShip/create/{number}": {
+            "post": {
+                "tags": [
+                    "starship"
+                ],
+                "summary": "Endpoint for request a search and create record for model starship",
+                "description": "This is a resource by - EXECUTE FUNCTION (createStarship) in serverless.yml",
+                "operationId": "createStarship",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "number",
+                        "in": "path",
+                        "description": "It is the number to search en DynamoDB if exists or save if not",
+                        "require": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "It's working, status 200"
+                    },
+                    "201": {
+                        "description": "It's working, status 201 created"
+                    }
+                }
+            }
+        },
+        "/starShip/getRangeLimit/{number}": {
+            "get": {
+                "tags": [
+                    "starship"
+                ],
+                "summary": "Endpoint for request a search limit record for model starship",
+                "description": "This is a resource by - EXECUTE FUNCTION (getRangeLimitStarship) in serverless.yml",
+                "operationId": "getRangeLimitStarship",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "number",
+                        "in": "path",
+                        "description": "It is the number to search en DynamoDB",
+                        "require": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "It's working, status 200"
+                    }
+                }
+            }
+        },
+        "/starShip/getAll": {
+            "get": {
+                "tags": [
+                    "starship"
+                ],
+                "summary": "Endpoint for request a search all record for model starship",
+                "description": "This is a resource by - EXECUTE FUNCTION (getAllStarship) in serverless.yml",
+                "operationId": "getAllStarship",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "It's working, status 200"
+                    }
+                }
+            }
+        },
+        "/starShip/update/{id}": {
+            "put": {
+                "tags": [
+                    "starship"
+                ],
+                "summary": "Endpoint for request a update one record for model starship",
+                "description": "This is a resource by - EXECUTE FUNCTION (putStarship) in serverless.yml",
+                "operationId": "putStarship",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "It is the id (identification) to search en DynamoDB",
+                        "require": true
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "This is the body for update records",
+                        "require": true,
+                        "schema": {
+                          "type": "object",
+                          "properties": {
+                            "paramName": {
+                                "type": "string"
+                            },
+                            "paramValue": {
+                                "type": "string"
+                            }
+                          }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "It's working, status 200"
+                    }
+                }
+            }
+        },
+        "/starShip/delete/{id}": {
+            "delete": {
+                "tags": [
+                    "starship"
+                ],
+                "summary": "Endpoint for request a remove one record for model starship",
+                "description": "This is a resource by - EXECUTE FUNCTION (deleteStarship) in serverless.yml",
+                "operationId": "deleteStarship",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "It is the id (identification) to remove in DynamoDB",
+                        "require": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "It's working, status 200"
+                    }
+                }
+            }
+        },
+        "/vehicle/create/{number}": {
+            "post": {
+                "tags": [
+                    "vehicle"
+                ],
+                "summary": "Endpoint for request a search and create record for model vehicle",
+                "description": "This is a resource by - EXECUTE FUNCTION (createVehicle) in serverless.yml",
+                "operationId": "createVehicle",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "number",
+                        "in": "path",
+                        "description": "It is the number to search en DynamoDB if exists or save if not",
+                        "require": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "It's working, status 200"
+                    },
+                    "201": {
+                        "description": "It's working, status 201 created"
+                    }
+                }
+            }
+        },
+        "/vehicle/getRangeLimit/{number}": {
+            "get": {
+                "tags": [
+                    "vehicle"
+                ],
+                "summary": "Endpoint for request a search limit record for model vehicle",
+                "description": "This is a resource by - EXECUTE FUNCTION (getRangeLimitVehicle) in serverless.yml",
+                "operationId": "getRangeLimitVehicle",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "number",
+                        "in": "path",
+                        "description": "It is the number to search en DynamoDB if exists or save if not",
+                        "require": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "It's working, status 200"
+                    },
+                    "201": {
+                        "description": "It's working, status 201 created"
+                    }
+                }
+            }
+        },
+        "/vehicle/getAll": {
+            "get": {
+                "tags": [
+                    "vehicle"
+                ],
+                "summary": "Endpoint for request a search and create record for model vehicle",
+                "description": "This is a resource by - EXECUTE FUNCTION (getAllVehicle) in serverless.yml",
+                "operationId": "getAllVehicle",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "It's working, status 200"
+                    },
+                    "201": {
+                        "description": "It's working, status 201 created"
+                    }
+                }
+            }
+        },
+         "/vehicle/update/{id}": {
+            "put": {
+                "tags": [
+                    "vehicle"
+                ],
+                "summary": "Endpoint for request a update one record for model vehicle",
+                "description": "This is a resource by - EXECUTE FUNCTION (putVehicle) in serverless.yml",
+                "operationId": "putVehicle",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "It is the id (identification) to search en DynamoDB",
+                        "require": true
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "This is the body for update records",
+                        "require": true,
+                        "schema": {
+                          "type": "object",
+                          "properties": {
+                            "paramName": {
+                                "type": "string"
+                            },
+                            "paramValue": {
+                                "type": "string"
+                            }
+                          }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "It's working, status 200"
+                    }
+                }
+            }
+        },
+        "/vehicle/delete/{id}": {
+            "delete": {
+                "tags": [
+                    "vehicle"
+                ],
+                "summary": "Endpoint for request a remove one record for model vehicle",
+                "description": "This is a resource by - EXECUTE FUNCTION (deleteVehicle) in serverless.yml",
+                "operationId": "deleteVehicle",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "It is the id (identification) to remove in DynamoDB",
+                        "require": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "It's working, status 200"
+                    }
+                }
+            }
+        }
+    },
+
+    "definitions": {
+        "starship": {
+            "type": "object",
+            "properties": {                
+                "nombre": {
+                    "type": "string"
+                },
+                "modelo": {
+                    "type": "string"                   
+                },
+                "fabricante": {
+                    "type": "string"
+                },
+                "costo_en_creditos": {
+                    "type": "string"
+                },
+                "largo": {
+                    "type": "string"
+                },
+                "velocidad_max_atmosfera": {
+                    "type": "string"
+                },
+                "pasajeros": {
+                    "type": "string"
+                },
+                "capacidad_carga": {
+                    "type": "string"
+                },
+                "consumibles": {
+                    "type": "string"
+                },
+                "clasificacion_hiperimpulsor": {
+                    "type": "string"
+                },
+                "numero_max_megalights": {
+                    "type": "string"
+                },
+                "clase_naves_estelares": {
+                    "type": "string"
+                },
+                "pilotos": {
+                    "type": "array"
+                },
+                "peliculas": {
+                  "type": "array"
+                },
+                "creado": {
+                    "type": "string"
+                },
+                "editado": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "createAt": {
+                    "type": "string"
+                }
+            },
+            "xml": {
+                "name": "User"
+            }
+        },
+        "vehicle": {
+            "type": "object",
+            "properties": {
+                "nombre": {
+                    "type": "string"
+                },
+                "modelo": {
+                    "type": "string"
+                },
+                "fabricante": {
+                    "type": "string"
+                },
+                "costo_en_creditos": {
+                    "type": "string"
+                },
+                "largo": {
+                    "type": "string"
+                },
+                "velocidad_max_atmosfera": {
+                    "type": "string"
+                },
+                "pasajeros": {
+                    "type": "string"
+                },
+                "capacidad_carga": {
+                    "type": "string"
+                },
+                "consumibles": {
+                    "type": "string"
+                },
+                "clase_vehiculo": {
+                    "type": "string"
+                },
+                "pilotos": {
+                    "type": "array"
+                },
+                "editad": {
+                    "type": "string"
+                },
+                "peliculas": {
+                    "type": "array"
+                },
+                "creado": {
+                    "type": "string"
+                },
+                "editado": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "createAt": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "externalDocs": {
+        "description": "Find out more about Me",
+        "url": "https://github.com/EdgarJhonatan"
+    }
+}

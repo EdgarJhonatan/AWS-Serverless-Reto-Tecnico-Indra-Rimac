@@ -1,0 +1,187 @@
+#Name Service
+service: aws-reto-indra
+
+# the plugins used in this project
+plugins:
+  - serverless-offline
+  - serverless-plugin-include-dependencies
+  - serverless-mocha-plugin
+
+# Excluding packages to reduce project size MB
+package:
+  - node_modules/**
+  - test/**
+
+frameworkVersion: "2"
+
+# Declaring variables
+custom:
+  settings:
+    TABLE_STARSHIP: starship
+    TABLE_VEHICLE: vehicle
+
+# configuration AWS
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-2
+  stage: dev
+  environment: ${self:custom.settings}
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        #  - dynamodb:*
+        - dynamodb:DescribeTable
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteITem
+      Resource:
+        - "arn:aws:dynamodb:us-east-2:*:table/starship"
+        - "arn:aws:dynamodb:us-east-2:*:table/vehicle"
+
+functions:
+  ####FUNCTIONS FROM STARTSHIP####
+  #Function createStarship: record and save
+  createStarship:
+    handler: src/handler.createStarship
+    events:
+      - http:
+          path: /starShip/create/{number}
+          method: post
+          request:
+            parameters:
+              paths:
+                number: true
+
+  #Function getRangeLimitStarship: limit records
+  getRangeLimitStarship:
+    handler: src/handler.getRangeLimitStarship
+    events:
+      - http:
+          path: /starShip/getRangeLimit/{number}
+          method: get
+          request:
+            parameters:
+              paths:
+                number: true
+
+  #Function gettAllStarship: get all records
+  gettAllStarship:
+    handler: src/handler.gettAllStarship
+    events:
+      - http:
+          path: /starShip/getAll
+          method: get
+
+  #Function putStarship: update a record
+  putStarship:
+    handler: src/handler.putStarship
+    events:
+      - http:
+          path: /starShip/update/{id}
+          method: put
+          request:
+            parameters:
+              paths:
+                id: true
+
+  #Function deleteStarship : delete a record
+  deleteStarship:
+    handler: src/handler.deleteStarship
+    events:
+      - http:
+          path: /starShip/delete/{id}
+          method: delete
+          request:
+            parameters:
+              paths:
+                id: true
+
+  ####FUNCTIONS FROM VEHICLE###
+
+  #Function createVehicle: record and save
+  createVehicle:
+    handler: src/handler.createVehicle
+    events:
+      - http:
+          path: /vehicle/create/{number}
+          method: post
+          request:
+            parameters:
+              paths:
+                number: true
+
+  #Function getRangeLimitVehicle: limit records
+  getRangeLimitVehicle:
+    handler: src/handler.getRangeLimitVehicle
+    events:
+      - http:
+          path: /vehicle/getRangeLimit/{number}
+          method: get
+          request:
+            parameters:
+              paths:
+                number: true
+
+  #Function gettAllVehicle: get all records
+  gettAllVehicle:
+    handler: src/handler.gettAllVehicle
+    events:
+      - http:
+          path: /vehicle/getAll
+          method: get
+
+  #Function putVehicle: update a record
+  putVehicle:
+    handler: src/handler.putVehicle
+    events:
+      - http:
+          path: /vehicle/update/{id}
+          method: put
+          request:
+            parameters:
+              paths:
+                id: true
+
+  #Function deleteVehicle : delete a record
+  deleteVehicle:
+    handler: src/handler.deleteVehicle
+    events:
+      - http:
+          path: /vehicle/delete/{id}
+          method: delete
+          request:
+            parameters:
+              paths:
+                id: true
+resources:
+  Resources:
+    StarshipTable: ## or '<DynamoDBTableName>'
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: "id"
+            AttributeType: "S"
+        KeySchema:
+          - AttributeName: "id"
+            KeyType: "HASH"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: starship
+
+    VehicleTable: ## or '<DynamoDBTableName>'
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: "id"
+            AttributeType: "S"
+        KeySchema:
+          - AttributeName: "id"
+            KeyType: "HASH"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: vehicle
