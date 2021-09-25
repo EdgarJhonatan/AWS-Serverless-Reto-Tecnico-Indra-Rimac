@@ -71,19 +71,18 @@ Esto levantará el proyecto por default en 'localhost' en el puerto '3000'
 
 ### Testing
 
-Testeo con Mochajs.
+Testeo con Jest.
 
-Para poder realizar TDD con Mochajs realizar los siguientes comandos.
-Importante: - Los nombres de las funciones de testeo deben existir en el proyecto.
+Para poder realizar TDD con Jest realizar los siguientes comandos.
 
-Para el modelo Starship
+Para el modelo Starship y Vehicle
 
 ```sh
-export NAME_FUNCTION = startship
-sls invoke test -f ${NAME_FUNCTION}
+npm run test
 ```
 
 Esto realizará las pruebas unitarias para el modelo Starship (haciendo referencia a las naves estelares del API StarWar)
+Esto realizará las pruebas unitarias para el modelo Vehicle (haciendo referencia a lo vehículos del API StarWar)
 
 ## License
 
