@@ -5,7 +5,6 @@ service: aws-reto-indra
 plugins:
   - serverless-offline
   - serverless-plugin-include-dependencies
-  - serverless-mocha-plugin
 
 # Excluding packages to reduce project size MB
 package:
@@ -67,9 +66,9 @@ functions:
               paths:
                 number: true
 
-  #Function gettAllStarship: get all records
-  gettAllStarship:
-    handler: src/handler.gettAllStarship
+  #Function getAllStarship: get all records
+  getAllStarship:
+    handler: src/handler.getAllStarship
     events:
       - http:
           path: /starShip/getAll
@@ -125,9 +124,9 @@ functions:
               paths:
                 number: true
 
-  #Function gettAllVehicle: get all records
-  gettAllVehicle:
-    handler: src/handler.gettAllVehicle
+  #Function getAllVehicle: get all records
+  getAllVehicle:
+    handler: src/handler.getAllVehicle
     events:
       - http:
           path: /vehicle/getAll

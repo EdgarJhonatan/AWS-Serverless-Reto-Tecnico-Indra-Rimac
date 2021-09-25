@@ -1,0 +1,73 @@
+{
+  "body": null,
+  "headers": {
+    "User-Agent": "PostmanRuntime/7.26.8",
+    "Accept": "*/*",
+    "Postman-Token": "bb07f5e2-91b7-48da-b054-1d81d2ff7dc6",
+    "Host": "localhost:3000",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive"
+  },
+  "httpMethod": "GET",
+  "isBase64Encoded": false,
+  "multiValueHeaders": {
+    "User-Agent": [
+      "PostmanRuntime/7.26.8"
+    ],
+    "Accept": [
+      "*/*"
+    ],
+    "Postman-Token": [
+      "bb07f5e2-91b7-48da-b054-1d81d2ff7dc6"
+    ],
+    "Host": [
+      "localhost:3000"
+    ],
+    "Accept-Encoding": [
+      "gzip, deflate, br"
+    ],
+    "Connection": [
+      "keep-alive"
+    ]
+  },
+  "multiValueQueryStringParameters": null,
+  "path": "/vehicle/getAll",
+  "pathParameters": null,
+  "queryStringParameters": null,
+  "requestContext": {
+    "accountId": "offlineContext_accountId",
+    "apiId": "offlineContext_apiId",
+    "authorizer": {
+      "principalId": "offlineContext_authorizer_principalId"
+    },
+    "domainName": "offlineContext_domainName",
+    "domainPrefix": "offlineContext_domainPrefix",
+    "extendedRequestId": "cktz6s9550006h98g5rb00ps7",
+    "httpMethod": "GET",
+    "identity": {
+      "accessKey": null,
+      "accountId": "offlineContext_accountId",
+      "apiKey": "offlineContext_apiKey",
+      "apiKeyId": "offlineContext_apiKeyId",
+      "caller": "offlineContext_caller",
+      "cognitoAuthenticationProvider": "offlineContext_cognitoAuthenticationProvider",
+      "cognitoAuthenticationType": "offlineContext_cognitoAuthenticationType",
+      "cognitoIdentityId": "offlineContext_cognitoIdentityId",
+      "cognitoIdentityPoolId": "offlineContext_cognitoIdentityPoolId",
+      "principalOrgId": null,
+      "sourceIp": "127.0.0.1",
+      "user": "offlineContext_user",
+      "userAgent": "PostmanRuntime/7.26.8",
+      "userArn": "offlineContext_userArn"
+    },
+    "path": "/vehicle/getAll",
+    "protocol": "HTTP/1.1",
+    "requestId": "cktz6s9550007h98gb6tu9xwx",
+    "requestTime": "24/Sep/2021:21:41:21 -0500",
+    "requestTimeEpoch": 1632537681736,
+    "resourceId": "offlineContext_resourceId",
+    "resourcePath": "/dev/vehicle/getAll",
+    "stage": "dev"
+  },
+  "resource": "*"
+}

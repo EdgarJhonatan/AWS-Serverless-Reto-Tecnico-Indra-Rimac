@@ -83,10 +83,10 @@
         "LogGroupName": "/aws/lambda/aws-reto-indra-dev-getRangeLimitStarship"
       }
     },
-    "GettAllStarshipLogGroup": {
+    "GetAllStarshipLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/aws-reto-indra-dev-gettAllStarship"
+        "LogGroupName": "/aws/lambda/aws-reto-indra-dev-getAllStarship"
       }
     },
     "PutStarshipLogGroup": {
@@ -113,10 +113,10 @@
         "LogGroupName": "/aws/lambda/aws-reto-indra-dev-getRangeLimitVehicle"
       }
     },
-    "GettAllVehicleLogGroup": {
+    "GetAllVehicleLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
-        "LogGroupName": "/aws/lambda/aws-reto-indra-dev-gettAllVehicle"
+        "LogGroupName": "/aws/lambda/aws-reto-indra-dev-getAllVehicle"
       }
     },
     "PutVehicleLogGroup": {
@@ -230,7 +230,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/aws-reto-indra/dev/1632448465936-2021-09-24T01:54:25.936Z/aws-reto-indra.zip"
+          "S3Key": "serverless/aws-reto-indra/dev/1632539262136-2021-09-25T03:07:42.136Z/aws-reto-indra.zip"
         },
         "Handler": "src/handler.createStarship",
         "Runtime": "nodejs12.x",
@@ -261,7 +261,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/aws-reto-indra/dev/1632448465936-2021-09-24T01:54:25.936Z/aws-reto-indra.zip"
+          "S3Key": "serverless/aws-reto-indra/dev/1632539262136-2021-09-25T03:07:42.136Z/aws-reto-indra.zip"
         },
         "Handler": "src/handler.getRangeLimitStarship",
         "Runtime": "nodejs12.x",
@@ -285,18 +285,18 @@
         "GetRangeLimitStarshipLogGroup"
       ]
     },
-    "GettAllStarshipLambdaFunction": {
+    "GetAllStarshipLambdaFunction": {
       "Type": "AWS::Lambda::Function",
       "Properties": {
         "Code": {
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/aws-reto-indra/dev/1632448465936-2021-09-24T01:54:25.936Z/aws-reto-indra.zip"
+          "S3Key": "serverless/aws-reto-indra/dev/1632539262136-2021-09-25T03:07:42.136Z/aws-reto-indra.zip"
         },
-        "Handler": "src/handler.gettAllStarship",
+        "Handler": "src/handler.getAllStarship",
         "Runtime": "nodejs12.x",
-        "FunctionName": "aws-reto-indra-dev-gettAllStarship",
+        "FunctionName": "aws-reto-indra-dev-getAllStarship",
         "MemorySize": 1024,
         "Timeout": 6,
         "Environment": {
@@ -313,7 +313,7 @@
         }
       },
       "DependsOn": [
-        "GettAllStarshipLogGroup"
+        "GetAllStarshipLogGroup"
       ]
     },
     "PutStarshipLambdaFunction": {
@@ -323,7 +323,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/aws-reto-indra/dev/1632448465936-2021-09-24T01:54:25.936Z/aws-reto-indra.zip"
+          "S3Key": "serverless/aws-reto-indra/dev/1632539262136-2021-09-25T03:07:42.136Z/aws-reto-indra.zip"
         },
         "Handler": "src/handler.putStarship",
         "Runtime": "nodejs12.x",
@@ -354,7 +354,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/aws-reto-indra/dev/1632448465936-2021-09-24T01:54:25.936Z/aws-reto-indra.zip"
+          "S3Key": "serverless/aws-reto-indra/dev/1632539262136-2021-09-25T03:07:42.136Z/aws-reto-indra.zip"
         },
         "Handler": "src/handler.deleteStarship",
         "Runtime": "nodejs12.x",
@@ -385,7 +385,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/aws-reto-indra/dev/1632448465936-2021-09-24T01:54:25.936Z/aws-reto-indra.zip"
+          "S3Key": "serverless/aws-reto-indra/dev/1632539262136-2021-09-25T03:07:42.136Z/aws-reto-indra.zip"
         },
         "Handler": "src/handler.createVehicle",
         "Runtime": "nodejs12.x",
@@ -416,7 +416,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/aws-reto-indra/dev/1632448465936-2021-09-24T01:54:25.936Z/aws-reto-indra.zip"
+          "S3Key": "serverless/aws-reto-indra/dev/1632539262136-2021-09-25T03:07:42.136Z/aws-reto-indra.zip"
         },
         "Handler": "src/handler.getRangeLimitVehicle",
         "Runtime": "nodejs12.x",
@@ -440,18 +440,18 @@
         "GetRangeLimitVehicleLogGroup"
       ]
     },
-    "GettAllVehicleLambdaFunction": {
+    "GetAllVehicleLambdaFunction": {
       "Type": "AWS::Lambda::Function",
       "Properties": {
         "Code": {
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/aws-reto-indra/dev/1632448465936-2021-09-24T01:54:25.936Z/aws-reto-indra.zip"
+          "S3Key": "serverless/aws-reto-indra/dev/1632539262136-2021-09-25T03:07:42.136Z/aws-reto-indra.zip"
         },
-        "Handler": "src/handler.gettAllVehicle",
+        "Handler": "src/handler.getAllVehicle",
         "Runtime": "nodejs12.x",
-        "FunctionName": "aws-reto-indra-dev-gettAllVehicle",
+        "FunctionName": "aws-reto-indra-dev-getAllVehicle",
         "MemorySize": 1024,
         "Timeout": 6,
         "Environment": {
@@ -468,7 +468,7 @@
         }
       },
       "DependsOn": [
-        "GettAllVehicleLogGroup"
+        "GetAllVehicleLogGroup"
       ]
     },
     "PutVehicleLambdaFunction": {
@@ -478,7 +478,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/aws-reto-indra/dev/1632448465936-2021-09-24T01:54:25.936Z/aws-reto-indra.zip"
+          "S3Key": "serverless/aws-reto-indra/dev/1632539262136-2021-09-25T03:07:42.136Z/aws-reto-indra.zip"
         },
         "Handler": "src/handler.putVehicle",
         "Runtime": "nodejs12.x",
@@ -509,7 +509,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/aws-reto-indra/dev/1632448465936-2021-09-24T01:54:25.936Z/aws-reto-indra.zip"
+          "S3Key": "serverless/aws-reto-indra/dev/1632539262136-2021-09-25T03:07:42.136Z/aws-reto-indra.zip"
         },
         "Handler": "src/handler.deleteVehicle",
         "Runtime": "nodejs12.x",
@@ -533,104 +533,104 @@
         "DeleteVehicleLogGroup"
       ]
     },
-    "CreateStarshipLambdaVersion6GY9YFJgHWi3Uj8PcmAbEM2v8i0YVlJoHtMxWnGIPE": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "CreateStarshipLambdaFunction"
-        },
-        "CodeSha256": "5ww7RogN7SH6rUjL9bMGxFsWUa8Mn0kCjTIuVLAzLgw="
-      }
-    },
-    "GetRangeLimitStarshipLambdaVersionXLznKIfnQufSYrGeuDxk3A8RrS6XRXZUSBCsxToI": {
+    "GetRangeLimitStarshipLambdaVersion3LwxjpHPPwbY8EJotoKLYDUcp8VAaETGFHVfhR99w": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetRangeLimitStarshipLambdaFunction"
         },
-        "CodeSha256": "5ww7RogN7SH6rUjL9bMGxFsWUa8Mn0kCjTIuVLAzLgw="
+        "CodeSha256": "5MJRi0OKXaog4S+HDnxl7MgrXzUQpILbPap80TwodFQ="
       }
     },
-    "PutStarshipLambdaVersionLgNHxgjnw2wDvTMtFV2pyrrzFkocZZl4YapsUQTcJKs": {
+    "CreateStarshipLambdaVersioncOb2xAEa9fOepXj2KIUFaptOQzGUEwY1tXM6Uuavt8": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "CreateStarshipLambdaFunction"
+        },
+        "CodeSha256": "5MJRi0OKXaog4S+HDnxl7MgrXzUQpILbPap80TwodFQ="
+      }
+    },
+    "GetAllStarshipLambdaVersionh9NPjDLImT7MTdXSY2wvjBlZGy5Mh4CpfNV8XGnuiI": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "GetAllStarshipLambdaFunction"
+        },
+        "CodeSha256": "5MJRi0OKXaog4S+HDnxl7MgrXzUQpILbPap80TwodFQ="
+      }
+    },
+    "PutStarshipLambdaVersion8AKiSSKJogy5PwVnJSlRoiVG1ANNFEYOpOBsf9wsc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "PutStarshipLambdaFunction"
         },
-        "CodeSha256": "5ww7RogN7SH6rUjL9bMGxFsWUa8Mn0kCjTIuVLAzLgw="
+        "CodeSha256": "5MJRi0OKXaog4S+HDnxl7MgrXzUQpILbPap80TwodFQ="
       }
     },
-    "GettAllStarshipLambdaVersionJ2hNYEgluD2kmGGxhGJkR1SrefyxDGfCZqq6ZQTU": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "GettAllStarshipLambdaFunction"
-        },
-        "CodeSha256": "5ww7RogN7SH6rUjL9bMGxFsWUa8Mn0kCjTIuVLAzLgw="
-      }
-    },
-    "DeleteStarshipLambdaVersiondwenlD9sLIwWraf3FLDpdf1owWLVBvgyzUwyAZvpkQ": {
+    "DeleteStarshipLambdaVersionbNjWVZ8Yje8coB9oPKdN5mg9t4m7t5HFu0SeBkTZtM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteStarshipLambdaFunction"
         },
-        "CodeSha256": "5ww7RogN7SH6rUjL9bMGxFsWUa8Mn0kCjTIuVLAzLgw="
+        "CodeSha256": "5MJRi0OKXaog4S+HDnxl7MgrXzUQpILbPap80TwodFQ="
       }
     },
-    "CreateVehicleLambdaVersion13REmRypMT7Q8ANi8Rx85NwHg0kkxAReRZFUbAowtw0": {
-      "Type": "AWS::Lambda::Version",
-      "DeletionPolicy": "Retain",
-      "Properties": {
-        "FunctionName": {
-          "Ref": "CreateVehicleLambdaFunction"
-        },
-        "CodeSha256": "5ww7RogN7SH6rUjL9bMGxFsWUa8Mn0kCjTIuVLAzLgw="
-      }
-    },
-    "GetRangeLimitVehicleLambdaVersionXYSzX2JYH62wIhsl5ZgMaLrJP3zQTqlio3uM0AZfEE": {
+    "GetRangeLimitVehicleLambdaVersionQzhOqzbQcT0PE5kc8YrrhwW5J3HnIj45tZEL1GWGsc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetRangeLimitVehicleLambdaFunction"
         },
-        "CodeSha256": "5ww7RogN7SH6rUjL9bMGxFsWUa8Mn0kCjTIuVLAzLgw="
+        "CodeSha256": "5MJRi0OKXaog4S+HDnxl7MgrXzUQpILbPap80TwodFQ="
       }
     },
-    "GettAllVehicleLambdaVersionfq9rK8s1WFDpriKSbyhwKYm0fPDKgEQqGLCego0A": {
+    "CreateVehicleLambdaVersionCJfrrNub2QF6gOtX4K2WKPuHxQ0Uolcc7mmgPmk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
-          "Ref": "GettAllVehicleLambdaFunction"
+          "Ref": "CreateVehicleLambdaFunction"
         },
-        "CodeSha256": "5ww7RogN7SH6rUjL9bMGxFsWUa8Mn0kCjTIuVLAzLgw="
+        "CodeSha256": "5MJRi0OKXaog4S+HDnxl7MgrXzUQpILbPap80TwodFQ="
       }
     },
-    "PutVehicleLambdaVersionC6lQ09bCHiW2c0ZiDCPs8GOnsJzG0WBhQhjCFSc": {
+    "PutVehicleLambdaVersionpBKDFc6yHZxK9UI4jSCFFHuvw5I6w80r3g9XSdZygg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "PutVehicleLambdaFunction"
         },
-        "CodeSha256": "5ww7RogN7SH6rUjL9bMGxFsWUa8Mn0kCjTIuVLAzLgw="
+        "CodeSha256": "5MJRi0OKXaog4S+HDnxl7MgrXzUQpILbPap80TwodFQ="
       }
     },
-    "DeleteVehicleLambdaVersionZKF0UKgSgQ7ecgB7ZV98XlLBeX7cSthfy0nkJw": {
+    "GetAllVehicleLambdaVersiongVuHebSthyO5C1XHgSCNBzjv8N44k28ILIw7ZpiCgk": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "GetAllVehicleLambdaFunction"
+        },
+        "CodeSha256": "5MJRi0OKXaog4S+HDnxl7MgrXzUQpILbPap80TwodFQ="
+      }
+    },
+    "DeleteVehicleLambdaVersionlpyZewrG0LcCF2PPU9X5qbvCGaqw71ZfEkVem6956k": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteVehicleLambdaFunction"
         },
-        "CodeSha256": "5ww7RogN7SH6rUjL9bMGxFsWUa8Mn0kCjTIuVLAzLgw="
+        "CodeSha256": "5MJRi0OKXaog4S+HDnxl7MgrXzUQpILbPap80TwodFQ="
       }
     },
     "ApiGatewayRestApi": {
@@ -1024,7 +1024,7 @@
                 ":lambda:path/2015-03-31/functions/",
                 {
                   "Fn::GetAtt": [
-                    "GettAllStarshipLambdaFunction",
+                    "GetAllStarshipLambdaFunction",
                     "Arn"
                   ]
                 },
@@ -1036,7 +1036,7 @@
         "MethodResponses": []
       },
       "DependsOn": [
-        "GettAllStarshipLambdaPermissionApiGateway"
+        "GetAllStarshipLambdaPermissionApiGateway"
       ]
     },
     "ApiGatewayMethodStarshipUpdateIdVarPut": {
@@ -1274,7 +1274,7 @@
                 ":lambda:path/2015-03-31/functions/",
                 {
                   "Fn::GetAtt": [
-                    "GettAllVehicleLambdaFunction",
+                    "GetAllVehicleLambdaFunction",
                     "Arn"
                   ]
                 },
@@ -1286,7 +1286,7 @@
         "MethodResponses": []
       },
       "DependsOn": [
-        "GettAllVehicleLambdaPermissionApiGateway"
+        "GetAllVehicleLambdaPermissionApiGateway"
       ]
     },
     "ApiGatewayMethodVehicleUpdateIdVarPut": {
@@ -1402,7 +1402,7 @@
         "Name": "aws-reto-indra-dev | Validate request body and querystring parameters"
       }
     },
-    "ApiGatewayDeployment1632448458902": {
+    "ApiGatewayDeployment1632539253576": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -1497,12 +1497,12 @@
         }
       }
     },
-    "GettAllStarshipLambdaPermissionApiGateway": {
+    "GetAllStarshipLambdaPermissionApiGateway": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "FunctionName": {
           "Fn::GetAtt": [
-            "GettAllStarshipLambdaFunction",
+            "GetAllStarshipLambdaFunction",
             "Arn"
           ]
         },
@@ -1682,12 +1682,12 @@
         }
       }
     },
-    "GettAllVehicleLambdaPermissionApiGateway": {
+    "GetAllVehicleLambdaPermissionApiGateway": {
       "Type": "AWS::Lambda::Permission",
       "Properties": {
         "FunctionName": {
           "Fn::GetAtt": [
-            "GettAllVehicleLambdaFunction",
+            "GetAllVehicleLambdaFunction",
             "Arn"
           ]
         },
@@ -1847,91 +1847,91 @@
         "Name": "sls-aws-reto-indra-dev-ServerlessDeploymentBucketName"
       }
     },
-    "CreateStarshipLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "CreateStarshipLambdaVersion6GY9YFJgHWi3Uj8PcmAbEM2v8i0YVlJoHtMxWnGIPE"
-      },
-      "Export": {
-        "Name": "sls-aws-reto-indra-dev-CreateStarshipLambdaFunctionQualifiedArn"
-      }
-    },
     "GetRangeLimitStarshipLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetRangeLimitStarshipLambdaVersionXLznKIfnQufSYrGeuDxk3A8RrS6XRXZUSBCsxToI"
+        "Ref": "GetRangeLimitStarshipLambdaVersion3LwxjpHPPwbY8EJotoKLYDUcp8VAaETGFHVfhR99w"
       },
       "Export": {
         "Name": "sls-aws-reto-indra-dev-GetRangeLimitStarshipLambdaFunctionQualifiedArn"
       }
     },
+    "CreateStarshipLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "CreateStarshipLambdaVersioncOb2xAEa9fOepXj2KIUFaptOQzGUEwY1tXM6Uuavt8"
+      },
+      "Export": {
+        "Name": "sls-aws-reto-indra-dev-CreateStarshipLambdaFunctionQualifiedArn"
+      }
+    },
+    "GetAllStarshipLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "GetAllStarshipLambdaVersionh9NPjDLImT7MTdXSY2wvjBlZGy5Mh4CpfNV8XGnuiI"
+      },
+      "Export": {
+        "Name": "sls-aws-reto-indra-dev-GetAllStarshipLambdaFunctionQualifiedArn"
+      }
+    },
     "PutStarshipLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "PutStarshipLambdaVersionLgNHxgjnw2wDvTMtFV2pyrrzFkocZZl4YapsUQTcJKs"
+        "Ref": "PutStarshipLambdaVersion8AKiSSKJogy5PwVnJSlRoiVG1ANNFEYOpOBsf9wsc"
       },
       "Export": {
         "Name": "sls-aws-reto-indra-dev-PutStarshipLambdaFunctionQualifiedArn"
       }
     },
-    "GettAllStarshipLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "GettAllStarshipLambdaVersionJ2hNYEgluD2kmGGxhGJkR1SrefyxDGfCZqq6ZQTU"
-      },
-      "Export": {
-        "Name": "sls-aws-reto-indra-dev-GettAllStarshipLambdaFunctionQualifiedArn"
-      }
-    },
     "DeleteStarshipLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteStarshipLambdaVersiondwenlD9sLIwWraf3FLDpdf1owWLVBvgyzUwyAZvpkQ"
+        "Ref": "DeleteStarshipLambdaVersionbNjWVZ8Yje8coB9oPKdN5mg9t4m7t5HFu0SeBkTZtM"
       },
       "Export": {
         "Name": "sls-aws-reto-indra-dev-DeleteStarshipLambdaFunctionQualifiedArn"
       }
     },
-    "CreateVehicleLambdaFunctionQualifiedArn": {
-      "Description": "Current Lambda function version",
-      "Value": {
-        "Ref": "CreateVehicleLambdaVersion13REmRypMT7Q8ANi8Rx85NwHg0kkxAReRZFUbAowtw0"
-      },
-      "Export": {
-        "Name": "sls-aws-reto-indra-dev-CreateVehicleLambdaFunctionQualifiedArn"
-      }
-    },
     "GetRangeLimitVehicleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetRangeLimitVehicleLambdaVersionXYSzX2JYH62wIhsl5ZgMaLrJP3zQTqlio3uM0AZfEE"
+        "Ref": "GetRangeLimitVehicleLambdaVersionQzhOqzbQcT0PE5kc8YrrhwW5J3HnIj45tZEL1GWGsc"
       },
       "Export": {
         "Name": "sls-aws-reto-indra-dev-GetRangeLimitVehicleLambdaFunctionQualifiedArn"
       }
     },
-    "GettAllVehicleLambdaFunctionQualifiedArn": {
+    "CreateVehicleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GettAllVehicleLambdaVersionfq9rK8s1WFDpriKSbyhwKYm0fPDKgEQqGLCego0A"
+        "Ref": "CreateVehicleLambdaVersionCJfrrNub2QF6gOtX4K2WKPuHxQ0Uolcc7mmgPmk"
       },
       "Export": {
-        "Name": "sls-aws-reto-indra-dev-GettAllVehicleLambdaFunctionQualifiedArn"
+        "Name": "sls-aws-reto-indra-dev-CreateVehicleLambdaFunctionQualifiedArn"
       }
     },
     "PutVehicleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "PutVehicleLambdaVersionC6lQ09bCHiW2c0ZiDCPs8GOnsJzG0WBhQhjCFSc"
+        "Ref": "PutVehicleLambdaVersionpBKDFc6yHZxK9UI4jSCFFHuvw5I6w80r3g9XSdZygg"
       },
       "Export": {
         "Name": "sls-aws-reto-indra-dev-PutVehicleLambdaFunctionQualifiedArn"
       }
     },
+    "GetAllVehicleLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "GetAllVehicleLambdaVersiongVuHebSthyO5C1XHgSCNBzjv8N44k28ILIw7ZpiCgk"
+      },
+      "Export": {
+        "Name": "sls-aws-reto-indra-dev-GetAllVehicleLambdaFunctionQualifiedArn"
+      }
+    },
     "DeleteVehicleLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteVehicleLambdaVersionZKF0UKgSgQ7ecgB7ZV98XlLBeX7cSthfy0nkJw"
+        "Ref": "DeleteVehicleLambdaVersionlpyZewrG0LcCF2PPU9X5qbvCGaqw71ZfEkVem6956k"
       },
       "Export": {
         "Name": "sls-aws-reto-indra-dev-DeleteVehicleLambdaFunctionQualifiedArn"

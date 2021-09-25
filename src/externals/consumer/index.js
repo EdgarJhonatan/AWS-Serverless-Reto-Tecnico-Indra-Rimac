@@ -39,7 +39,7 @@ const getVehicle = async (number) => {
       return data;
     } else {
       console.log("Body del api externo", JSON.parse(body));
-      const startShips = new modelStarships(JSON.parse(body));
+      const startShips = new modelVehicles(JSON.parse(body));
       return responses._200({ ...startShips });
     }
   } catch (error) {

@@ -1,0 +1,86 @@
+{
+    "body": {
+      "paramName": "nombre",
+      "paramValue": "Sand Crawler update"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "User-Agent": "PostmanRuntime/7.26.8",
+      "Accept": "*/*",
+      "Postman-Token": "31c16c8e-72f3-4508-83a6-5a3e6dc94417",
+      "Host": "localhost:3000",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Connection": "keep-alive",
+      "Content-Length": "70"
+    },
+    "httpMethod": "PUT",
+    "isBase64Encoded": false,
+    "multiValueHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "User-Agent": [
+        "PostmanRuntime/7.26.8"
+      ],
+      "Accept": [
+        "*/*"
+      ],
+      "Postman-Token": [
+        "31c16c8e-72f3-4508-83a6-5a3e6dc94417"
+      ],
+      "Host": [
+        "localhost:3000"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Connection": [
+        "keep-alive"
+      ],
+      "Content-Length": [
+        "70"
+      ]
+    },
+    "multiValueQueryStringParameters": null,
+    "path": "/vehicle/update/a87ff679a2f3e71d9181a67b7542122c",
+    "pathParameters": {
+      "id": "a87ff679a2f3e71d9181a67b7542122c"
+    },
+    "queryStringParameters": null,
+    "requestContext": {
+      "accountId": "offlineContext_accountId",
+      "apiId": "offlineContext_apiId",
+      "authorizer": {
+        "principalId": "offlineContext_authorizer_principalId"
+      },
+      "domainName": "offlineContext_domainName",
+      "domainPrefix": "offlineContext_domainPrefix",
+      "extendedRequestId": "cktz6vl000009h98gazd0h2fa",
+      "httpMethod": "PUT",
+      "identity": {
+        "accessKey": null,
+        "accountId": "offlineContext_accountId",
+        "apiKey": "offlineContext_apiKey",
+        "apiKeyId": "offlineContext_apiKeyId",
+        "caller": "offlineContext_caller",
+        "cognitoAuthenticationProvider": "offlineContext_cognitoAuthenticationProvider",
+        "cognitoAuthenticationType": "offlineContext_cognitoAuthenticationType",
+        "cognitoIdentityId": "offlineContext_cognitoIdentityId",
+        "cognitoIdentityPoolId": "offlineContext_cognitoIdentityPoolId",
+        "principalOrgId": null,
+        "sourceIp": "127.0.0.1",
+        "user": "offlineContext_user",
+        "userAgent": "PostmanRuntime/7.26.8",
+        "userArn": "offlineContext_userArn"
+      },
+      "path": "/vehicle/update/a87ff679a2f3e71d9181a67b7542122c",
+      "protocol": "HTTP/1.1",
+      "requestId": "cktz6vl00000ah98gg0mw5qmc",
+      "requestTime": "24/Sep/2021:21:43:57 -0500",
+      "requestTimeEpoch": 1632537837066,
+      "resourceId": "offlineContext_resourceId",
+      "resourcePath": "/dev/vehicle/update/{id}",
+      "stage": "dev"
+    },
+    "resource": "/vehicle/update/{id}"
+  }

@@ -1,0 +1,75 @@
+{
+    "body": null,
+    "headers": {
+      "User-Agent": "PostmanRuntime/7.26.8",
+      "Accept": "*/*",
+      "Postman-Token": "00ef30b9-fb9c-48e8-9a1f-a157f40f3fe5",
+      "Host": "localhost:3000",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Connection": "keep-alive"
+    },
+    "httpMethod": "DELETE",
+    "isBase64Encoded": false,
+    "multiValueHeaders": {
+      "User-Agent": [
+        "PostmanRuntime/7.26.8"
+      ],
+      "Accept": [
+        "*/*"
+      ],
+      "Postman-Token": [
+        "00ef30b9-fb9c-48e8-9a1f-a157f40f3fe5"
+      ],
+      "Host": [
+        "localhost:3000"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Connection": [
+        "keep-alive"
+      ]
+    },
+    "multiValueQueryStringParameters": null,
+    "path": "/vehicle/delete/a87ff679a2f3e71d9181a67b7542122c",
+    "pathParameters": {
+      "id": "a87ff679a2f3e71d9181a67b7542122c"
+    },
+    "queryStringParameters": null,
+    "requestContext": {
+      "accountId": "offlineContext_accountId",
+      "apiId": "offlineContext_apiId",
+      "authorizer": {
+        "principalId": "offlineContext_authorizer_principalId"
+      },
+      "domainName": "offlineContext_domainName",
+      "domainPrefix": "offlineContext_domainPrefix",
+      "extendedRequestId": "cktz77f1o000lh98g3em16r10",
+      "httpMethod": "DELETE",
+      "identity": {
+        "accessKey": null,
+        "accountId": "offlineContext_accountId",
+        "apiKey": "offlineContext_apiKey",
+        "apiKeyId": "offlineContext_apiKeyId",
+        "caller": "offlineContext_caller",
+        "cognitoAuthenticationProvider": "offlineContext_cognitoAuthenticationProvider",
+        "cognitoAuthenticationType": "offlineContext_cognitoAuthenticationType",
+        "cognitoIdentityId": "offlineContext_cognitoIdentityId",
+        "cognitoIdentityPoolId": "offlineContext_cognitoIdentityPoolId",
+        "principalOrgId": null,
+        "sourceIp": "127.0.0.1",
+        "user": "offlineContext_user",
+        "userAgent": "PostmanRuntime/7.26.8",
+        "userArn": "offlineContext_userArn"
+      },
+      "path": "/vehicle/delete/a87ff679a2f3e71d9181a67b7542122c",
+      "protocol": "HTTP/1.1",
+      "requestId": "cktz77f1o000mh98g6frm94jt",
+      "requestTime": "24/Sep/2021:21:53:09 -0500",
+      "requestTimeEpoch": 1632538389226,
+      "resourceId": "offlineContext_resourceId",
+      "resourcePath": "/dev/vehicle/delete/{id}",
+      "stage": "dev"
+    },
+    "resource": "/vehicle/delete/{id}"
+  }

@@ -1,0 +1,21 @@
+{
+    "nombre": "T-16 skyhopper",
+    "capacidad_carga": "50",
+    "velocidad_max_atmosfera": "1200",
+    "url": "https://swapi.py4e.com/api/vehicles/6/",
+    "tripulacion": "1",
+    "consumibles": "0",
+    "largo": "10.4 ",
+    "peliculas": [
+        "https://swapi.py4e.com/api/films/1/"
+    ],
+    "createAt": "2021-09-25T01:24:35.691Z",
+    "pilotos": [],
+    "costo_en_creditos": "14500",
+    "modelo": "T-16 skyhopper",
+    "editado": "2014-12-20T21:30:21.665000Z",
+    "fabricante": "Incom Corporation",
+    "creado": "2014-12-10T16:01:52.434000Z",
+    "id": "1679091c5a880faf6fb5e6087eb1b2dc",
+    "pasajeros": "1"
+}

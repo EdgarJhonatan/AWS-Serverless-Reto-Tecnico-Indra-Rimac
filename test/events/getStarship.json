@@ -1,0 +1,73 @@
+{
+    "body": null,
+    "headers": {
+      "User-Agent": "PostmanRuntime/7.26.8",
+      "Accept": "*/*",
+      "Postman-Token": "752a02a3-7fb8-4460-a298-e270588ef85a",
+      "Host": "localhost:3000",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Connection": "keep-alive"
+    },
+    "httpMethod": "GET",
+    "isBase64Encoded": false,
+    "multiValueHeaders": {
+      "User-Agent": [
+        "PostmanRuntime/7.26.8"
+      ],
+      "Accept": [
+        "*/*"
+      ],
+      "Postman-Token": [
+        "752a02a3-7fb8-4460-a298-e270588ef85a"
+      ],
+      "Host": [
+        "localhost:3000"
+      ],
+      "Accept-Encoding": [
+        "gzip, deflate, br"
+      ],
+      "Connection": [
+        "keep-alive"
+      ]
+    },
+    "multiValueQueryStringParameters": null,
+    "path": "/starShip/getAll",
+    "pathParameters": null,
+    "queryStringParameters": null,
+    "requestContext": {
+      "accountId": "offlineContext_accountId",
+      "apiId": "offlineContext_apiId",
+      "authorizer": {
+        "principalId": "offlineContext_authorizer_principalId"
+      },
+      "domainName": "offlineContext_domainName",
+      "domainPrefix": "offlineContext_domainPrefix",
+      "extendedRequestId": "cktz6nokf0003h98gfhey4vt3",
+      "httpMethod": "GET",
+      "identity": {
+        "accessKey": null,
+        "accountId": "offlineContext_accountId",
+        "apiKey": "offlineContext_apiKey",
+        "apiKeyId": "offlineContext_apiKeyId",
+        "caller": "offlineContext_caller",
+        "cognitoAuthenticationProvider": "offlineContext_cognitoAuthenticationProvider",
+        "cognitoAuthenticationType": "offlineContext_cognitoAuthenticationType",
+        "cognitoIdentityId": "offlineContext_cognitoIdentityId",
+        "cognitoIdentityPoolId": "offlineContext_cognitoIdentityPoolId",
+        "principalOrgId": null,
+        "sourceIp": "127.0.0.1",
+        "user": "offlineContext_user",
+        "userAgent": "PostmanRuntime/7.26.8",
+        "userArn": "offlineContext_userArn"
+      },
+      "path": "/starShip/getAll",
+      "protocol": "HTTP/1.1",
+      "requestId": "cktz6nokf0004h98ghkpacg5i",
+      "requestTime": "24/Sep/2021:21:37:48 -0500",
+      "requestTimeEpoch": 1632537468446,
+      "resourceId": "offlineContext_resourceId",
+      "resourcePath": "/dev/starShip/getAll",
+      "stage": "dev"
+    },
+    "resource": "*"
+  }

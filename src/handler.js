@@ -51,7 +51,7 @@ module.exports.createStarship = async (event, context, callback) => {
 };
 
 /** REALIZA LA QUERY A DYNAMODB, OBTIENE TODOS LOS DATOS GUARDADOS  */
-module.exports.gettAllStarship = async (event, context, callback) => {
+module.exports.getAllStarship = async (event, context, callback) => {
   try {
     const res = await dynamo.getAll(tableStarship);
     return callback(null, responses._200(res.Items.sort(sortBtId)));
@@ -136,7 +136,7 @@ module.exports.createVehicle = async (event, context, callback) => {
 };
 
 /** REALIZA LA QUERY A DYNAMODB, OBTIENE TODOS LOS DATOS GUARDADOS  */
-module.exports.gettAllVehicle = async (event, context, callback) => {
+module.exports.getAllVehicle = async (event, context, callback) => {
   try {
     const res = await dynamo.getAll(tableVehicle);
     return callback(null, responses._200(res.Items.sort(sortBtId)));

@@ -1,0 +1,81 @@
+{
+    "body": null,
+    "headers": {
+       "User-Agent": "PostmanRuntime/7.26.8",
+       "Accept": "*/*",
+       "Postman-Token": "ae5315bf-b26d-4126-82d7-cdf3c0a49abe",
+       "Host": "localhost:3000",
+       "Accept-Encoding": "gzip, deflate, br",
+       "Connection": "keep-alive",
+       "Content-Length": "0"
+    },
+    "httpMethod": "POST",
+    "isBase64Encoded": false,
+    "multiValueHeaders": {
+       "User-Agent": [
+          "PostmanRuntime/7.26.8"
+       ],
+       "Accept": [
+          "*/*"
+       ],
+       "Postman-Token": [
+          "ae5315bf-b26d-4126-82d7-cdf3c0a49abe"
+       ],
+       "Host": [
+          "localhost:3000"
+       ],
+       "Accept-Encoding": [
+          "gzip, deflate, br"
+       ],
+       "Connection": [
+          "keep-alive"
+       ],
+       "Content-Length": [
+          "0"
+       ]
+    },
+    "multiValueQueryStringParameters": null,
+    "path": "/vehicle/create/6",
+    "pathParameters": {
+       "number": "6"
+    },
+    "queryStringParameters": null,
+    "requestContext": {
+       "accountId": "offlineContext_accountId",
+       "apiId": "offlineContext_apiId",
+       "authorizer": {
+          "claims": "undefined",
+          "scopes": "undefined",
+          "principalId": "offlineContext_authorizer_principalId"
+       },
+       "domainName": "offlineContext_domainName",
+       "domainPrefix": "offlineContext_domainPrefix",
+       "extendedRequestId": "cktz43gxa0009ru8gd6w35mix",
+       "httpMethod": "POST",
+       "identity": {
+          "accessKey": null,
+          "accountId": "offlineContext_accountId",
+          "apiKey": "offlineContext_apiKey",
+          "apiKeyId": "offlineContext_apiKeyId",
+          "caller": "offlineContext_caller",
+          "cognitoAuthenticationProvider": "offlineContext_cognitoAuthenticationProvider",
+          "cognitoAuthenticationType": "offlineContext_cognitoAuthenticationType",
+          "cognitoIdentityId": "offlineContext_cognitoIdentityId",
+          "cognitoIdentityPoolId": "offlineContext_cognitoIdentityPoolId",
+          "principalOrgId": null,
+          "sourceIp": "127.0.0.1",
+          "user": "offlineContext_user",
+          "userAgent": "PostmanRuntime/7.26.8",
+          "userArn": "offlineContext_userArn"
+       },
+       "path": "/vehicle/create/6",
+       "protocol": "HTTP/1.1",
+       "requestId": "cktz43gxb000aru8gajxwcnw7",
+       "requestTime": "24/Sep/2021:20:26:06 -0500",
+       "requestTimeEpoch": 1632533166189,
+       "resourceId": "offlineContext_resourceId",
+       "resourcePath": "/dev/vehicle/create/{number}",
+       "stage": "dev"
+    },
+    "resource": "*"
+ }

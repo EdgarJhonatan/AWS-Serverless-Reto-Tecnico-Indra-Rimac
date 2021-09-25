@@ -1,0 +1,71 @@
+{
+	"body": {},
+	"headers": {
+		"Host": "localhost:3000",
+		"User-Agent": "insomnia/2021.5.3",
+		"Content-Type": "application/json",
+		"Accept": "*/*",
+		"Content-Length": "34"
+	},
+	"httpMethod": "POST",
+	"isBase64Encoded": false,
+	"multiValueHeaders": {
+		"Host": [
+			"localhost:3000"
+		],
+		"User-Agent": [
+			"insomnia/2021.5.3"
+		],
+		"Content-Type": [
+			"application/json"
+		],
+		"Accept": [
+			"*/*"
+		],
+		"Content-Length": [
+			"34"
+		]
+	},
+	"multiValueQueryStringParameters": null,
+	"path": {},
+	"pathParameters": {
+		"number": "1"
+	},
+	"queryStringParameters": null,
+	"requestContext": {
+		"accountId": "offlineContext_accountId",
+		"apiId": "offlineContext_apiId",
+		"authorizer": {
+			"principalId": "offlineContext_authorizer_principalId"
+		},
+		"domainName": "offlineContext_domainName",
+		"domainPrefix": "offlineContext_domainPrefix",
+		"extendedRequestId": "cktyzd85g0006i4ob72wc3c8g",
+		"httpMethod": "POST",
+		"identity": {
+			"accessKey": null,
+			"accountId": "offlineContext_accountId",
+			"apiKey": "offlineContext_apiKey",
+			"apiKeyId": "offlineContext_apiKeyId",
+			"caller": "offlineContext_caller",
+			"cognitoAuthenticationProvider": "offlineContext_cognitoAuthenticationProvider",
+			"cognitoAuthenticationType": "offlineContext_cognitoAuthenticationType",
+			"cognitoIdentityId": "offlineContext_cognitoIdentityId",
+			"cognitoIdentityPoolId": "offlineContext_cognitoIdentityPoolId",
+			"principalOrgId": null,
+			"sourceIp": "127.0.0.1",
+			"user": "offlineContext_user",
+			"userAgent": "insomnia/2021.5.3",
+			"userArn": "offlineContext_userArn"
+		},
+		"path": "/starShip/create/1",
+		"protocol": "HTTP/1.1",
+		"requestId": "cktyzd85g0007i4ob0zve6fqi",
+		"requestTime": "24/Sep/2021:18:13:43 -0500",
+		"requestTimeEpoch": 1632525223297,
+		"resourceId": "offlineContext_resourceId",
+		"resourcePath": "/dev/starShip/create/{number}",
+		"stage": "dev"
+	},
+	"resource": ""
+}
