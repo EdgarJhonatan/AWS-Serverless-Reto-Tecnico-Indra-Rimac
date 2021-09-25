@@ -1,14 +1,6 @@
 const AWS = require("aws-sdk");
 const db = new AWS.DynamoDB.DocumentClient({ apiVersion: "2012-08-10" });
 
-if (process.env.JEST_WORKER_ID) {
-  options = {
-    endpoint: "http://localhost:3000",
-    region: "local-env",
-    sslEnabled: false,
-  };
-}
-
 const Dynamo = {
   async saveItem(TableName, Item) {
     const data = await db
