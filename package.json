@@ -12,11 +12,12 @@
     "express": "^4.17.1",
     "md5": "^2.3.0",
     "serverless-http": "^2.7.0",
-    "serverless-offline": "^8.2.0",
-    "serverless-plugin-include-dependencies": "^5.0.0"
+    "serverless-offline": "^8.2.0"
   },
   "devDependencies": {
-    "jest": "^27.2.1"
+    "jest": "^27.2.1",
+    "serverless-plugin-common-excludes": "^4.0.0",
+    "serverless-plugin-include-dependencies": "^5.0.0"
   },
   "scripts": {
     "test": "jest --coverage",
